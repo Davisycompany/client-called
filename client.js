@@ -1,4 +1,4 @@
-const LOCAL_IP_ADDRESS = "3.75.158.163"; // change it
+const LOCAL_IP_ADDRESS = "192.168.137.x"; // change it
 
 const getElement = id => document.getElementById(id);
 const [btnConnect, btnToggleVideo, btnToggleAudio, divRoomConfig, roomDiv, roomNameInput, localVideo, remoteVideo] = ["btnConnect",
@@ -23,10 +23,10 @@ const iceServers = {
 const streamConstraints = {audio: true, video: true};
 
 //let socket = io.connect(`https://${LOCAL_IP_ADDRESS}`, {secure: true});
-//let socket = io.connect("https://0.0.0.0:8080");
-let socket = io.connect("https://video-call-a95d.onrender.com");
+// let socket = io.connect("http://localhost");
+let socket = io.connect("https://video-call-a95d.onrender.com:443");
 
-//let socket = io.connect("http://localhost:8000");
+//let socket = io.connect("http://3.125.183.140:8000");
 btnToggleVideo.addEventListener("click", () => toggleTrack("video"));
 btnToggleAudio.addEventListener("click", () => toggleTrack("audio"));
 
