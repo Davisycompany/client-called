@@ -1,4 +1,4 @@
-const LOCAL_IP_ADDRESS = "35.157.117.28"; // change it
+const LOCAL_IP_ADDRESS = "3.125.183.140"; // change it
 
 const getElement = id => document.getElementById(id);
 const [btnConnect, btnToggleVideo, btnToggleAudio, divRoomConfig, roomDiv, roomNameInput, localVideo, remoteVideo] = ["btnConnect",
@@ -19,6 +19,7 @@ const iceServers = {
     }
   ]
 };
+
 
 const streamConstraints = {audio: true, video: true};
 
